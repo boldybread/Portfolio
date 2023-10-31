@@ -38,8 +38,6 @@ ul {
 }
 
 .cat {
-  width: 50%;
-  height: 700px;
   background: url("/Cat_Laptop.jpg") no-repeat;
   display: inline-block;
 }
@@ -65,22 +63,18 @@ h2 {
     text-align: center;
 }
 
-img {
-  width:50%;
-;
-}
-
-img:hover {
-
-}
 
 #footer {
     position: absolute;
+    display: flex;
     background-color: black;
     text-align: center;
     width: 100vw;
     bottom: 0;
-    height: 100px;
+    height: 30px;
+    padding: 30px;
+    font-size: larger;
+    justify-content: center;
 }
 
 body {
