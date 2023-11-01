@@ -1,14 +1,19 @@
-<head>
-<style>
 .flex-container {
 display:flex;
 }
+
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    top: 0px;
+    left: 0px;
     overflow: hidden;
     background-color: black;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
   }
   
   li {
@@ -37,30 +42,23 @@ ul {
   color:#111;
 }
 
-.cat {
-  background: url("/Cat_Laptop.jpg") no-repeat;
+#cat {
+  background: url("/Images/Cat_Laptop.jpg") no-repeat;
   display: inline-block;
 }
-.cat:hover {
-  background: url("/Cat_Eyes.jpg") no-repeat;
+#cat:hover {
+  background: url("/Images/Cat_Eyes.jpg") no-repeat;
 }
-</style>
+
 </head>
+
 
 
 body {
     display: flex;
     min-height: 100vh;
-
-;}
-
-ul {
-  background-color:black;
-  display: flex;
-  color:white;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 20px;
-  text-align:center;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -70,6 +68,16 @@ text-align: center;
 
 h2 {
     text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
 }
 
 p {
@@ -83,28 +91,27 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 
 #footer {
     position: fixed;
+    overflow: hidden;
     display: flex;
     background-color: black;
     text-align: center;
     width: 100vw;
-    bottom: 0;
+    bottom: 0px;
+    left: 0px;
     height: 30px;
     padding: 30px;
     font-size: larger;
     justify-content: center;
-}
-
-body {
     margin: 0;
 }
 
-.typewriter {
+
+#typewriter {
   display: flex;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid black; /* The typewriter cursor */
@@ -114,14 +121,14 @@ body {
   width:100%;
   align-items: center;
   animation: 
-    typing 5s steps(40, end),
+    typing 10s steps(40, end),
     blink-caret .75s step-end infinite;
   }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 75% }
+  to { width: 80% }
 }
 
 /* The typewriter cursor effect */
@@ -139,4 +146,8 @@ body {
 display: flex;
 margin: auto;
 
+}
+
+.grey {
+    background-color: rgba(93, 10, 104, 0.452);
 }
